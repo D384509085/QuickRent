@@ -438,19 +438,20 @@ user 用户相关操作
 
     {
         {
-        	"userid" : 1,
+        	"userid" : "1",
             "username" : "123",
             "password" : "123"
         },
         {
-            "username" : "123"
+            "userid" : "2",
+            "username" : "123",
             "password" : "123"
         }
     }
     
     或
     {
-        "message" : "failed"
+        "resault" : "failed"
     }
     
 
@@ -458,12 +459,12 @@ user 用户相关操作
 
 地址：v2/root/room
 
-请求方式：GET
+请求方式：POST
 
 请求参数：
 
     {
-        
+        "password" : "123456"
     }
 
 返回参数：
