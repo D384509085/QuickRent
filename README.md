@@ -77,7 +77,7 @@ user 用户相关操作
 
 返回参数：
 
-    {
+    [
         {
             "orderid" : "1"
             "rent_user" : "王睿"
@@ -92,7 +92,7 @@ user 用户相关操作
             "status" : "0"
             "roomid" : "6"
         }
-    }
+    ]
 
 借房订单查询：
 
@@ -108,7 +108,7 @@ user 用户相关操作
 
 返回参数：
 
-    {
+    [
         {
             "orderid" : "1"
             "rent_user" : "王睿"
@@ -123,7 +123,7 @@ user 用户相关操作
             "status" : "0"
             "roomid" : "6"
         }
-    }
+    ]
 
 
 
@@ -188,7 +188,7 @@ user 用户相关操作
 
 返回参数：
 
-    {
+    [
         {
             "roomid" : "2"
             "rent_user" : "王睿"
@@ -211,7 +211,7 @@ user 用户相关操作
             "status" : "0"
             "checked" : "1"
         }
-    }
+    ]
 
 添加借出的房屋：
 
@@ -311,7 +311,7 @@ user 用户相关操作
 
 返回参数：
 
-    {
+    [
         {
         	"name" : "花地湾招村新街小区",
         	"price" : "1500",
@@ -321,14 +321,14 @@ user 用户相关操作
         	"housesize" : "30平米",
         	"housefloor" : "3/6层",
         	"title" : "花地湾地铁站附近 温馨精装修一房一厅 家电齐全 随时方便看房",
-        	"imageurl" : {
+        	"imageurl" : [
                  	"img1" : "https://pic1.ajkimg.com/display/hj/a7d019b1ba3b24ffd9ec79bf3316e058/600x450c.jpg?t=1",
                  	"img2" : "https://pic1.ajkimg.com/display/hj/b9433672ef2d1d9ffb618de7f878ee39/600x450c.jpg?t=1",
                  	"img3" : "https://pic1.ajkimg.com/display/hj/035106432c370f8e84c10536ac2b838d/600x450c.jpg?t=1",
                  	"img4" : "https://pic1.ajkimg.com/display/hj/7ab8d82f8e2af63b544daf802d49aba9/600x450c.jpg?t=1",
             	 	"img5" : "https://pic1.ajkimg.com/display/hj/cf9b44e5fc424d1259c00b67c2c1afd5/600x450c.jpg?t=1",
                  	"img6" : "https://pic1.ajkimg.com/display/hj/2822b17e45c908b3c9bd08f5b90f6485/600x450.jpg?t=1"
-          	  }
+          	  ]
     	},
         {
         	"name" : "花地湾招村新街小区",
@@ -339,16 +339,16 @@ user 用户相关操作
         	"housesize" : "30平米",
         	"housefloor" : "3/6层",
         	"title" : "花地湾地铁站附近 温馨精装修一房一厅 家电齐全 随时方便看房",
-        	"imageurl" : {
+        	"imageurl" : [
                  	"img1" : "https://pic1.ajkimg.com/display/hj/a7d019b1ba3b24ffd9ec79bf3316e058/600x450c.jpg?t=1",
                  	"img2" : "https://pic1.ajkimg.com/display/hj/b9433672ef2d1d9ffb618de7f878ee39/600x450c.jpg?t=1",
                  	"img3" : "https://pic1.ajkimg.com/display/hj/035106432c370f8e84c10536ac2b838d/600x450c.jpg?t=1",
                  	"img4" : "https://pic1.ajkimg.com/display/hj/7ab8d82f8e2af63b544daf802d49aba9/600x450c.jpg?t=1",
             	 	"img5" : "https://pic1.ajkimg.com/display/hj/cf9b44e5fc424d1259c00b67c2c1afd5/600x450c.jpg?t=1",
                  	"img6" : "https://pic1.ajkimg.com/display/hj/2822b17e45c908b3c9bd08f5b90f6485/600x450.jpg?t=1"
-          	  }
+          	  ]
     	}
-    }
+    ]
 
 注1：这是爬虫爬到的数据，不能按关键字查询，所以在这里把所有的房屋信息都传给前端，进入房屋详情页面的时候带参跳转，数据就不从后台请求了。
 
@@ -368,7 +368,7 @@ user 用户相关操作
 
 返回体：
 
-    {
+    [
         {
             "roomid" : "2"
             "rent_user" : "王睿"
@@ -391,7 +391,7 @@ user 用户相关操作
             "status" : "0"
             "checked" : "1"
         }
-    }
+    ]
 
 添加订单：
 
@@ -436,7 +436,7 @@ user 用户相关操作
 
 返回参数:
 
-    {
+    [
         {
         	"userid" : "1",
             "username" : "123",
@@ -447,7 +447,7 @@ user 用户相关操作
             "username" : "123",
             "password" : "123"
         }
-    }
+    ]
     
     或
     {
@@ -469,7 +469,7 @@ user 用户相关操作
 
 返回参数：
 
-    {
+    [
         {
             "roomid" : "2"
             "rent_user" : "王睿"
@@ -492,7 +492,7 @@ user 用户相关操作
             "status" : "0"
             "checked" : "0"
         }
-    }
+    ]
 
 确认审核房屋(逻辑和修改房屋大同小异)
 
